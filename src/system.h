@@ -81,7 +81,7 @@ typedef struct
 	const char* crtShader;
 	const tic_cartridge* cart;
 
-	s32 uiScale;
+	double uiScale;
 
 } StudioConfig;
 

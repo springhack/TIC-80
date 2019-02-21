@@ -91,7 +91,7 @@ static void readConfigUiScale(Config* config, lua_State* lua)
 	lua_getglobal(lua, "UI_SCALE");
 
 	if(lua_isinteger(lua, -1))
-		config->data.uiScale = lua_tointeger(lua, -1);
+		config->data.uiScale = lua_tonumber(lua, -1);
 
 	lua_pop(lua, 1);
 }

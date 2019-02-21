@@ -3075,7 +3075,8 @@ static bool checkUIScale(Console* console, const char* param, const char* value)
 
 	if(strcmp(param, "-uiscale") == 0)
 	{
-		s32 scale = atoi(value);
+		double scale;
+		sscanf(value, "%lf", &scale);
 
 		if(scale > 0)
 		{
